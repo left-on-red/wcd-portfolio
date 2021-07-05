@@ -1,0 +1,68 @@
+div#centerContainer {
+    margin-left: -50px;
+    padding: 0;
+}
+
+table.centerTable tr td {
+    min-width: 100px;
+}
+
+table.centerTable tr:nth-child(1) td {
+    border: none;
+    margin: 0;
+    padding: 5px;
+}
+
+table.centerTable tr:nth-child(1) td input {
+    resize: none;
+    line-height: 30px;
+    width: 90%;
+    border: none;
+    border-bottom: solid 2px #aaa;
+    font-size: 18px;
+}
+
+table.centerTable tr.header {
+    color: #FFF;
+}
+
+table.centerTable tr.subheader {
+    background-color: #000;
+    color: #FFF;
+}
+
+table.centerTable tr.highlighted {
+    background-color: #FFFF00;
+}
+
+table.centerTable tr.divider {
+    background-color: #000;
+    color: #FFF;
+    height: 10px;
+}
+
+table.centerTable tr td.timeHead {
+    width: 140px;
+}
+
+table.centerTable tr td.timeCell {
+    padding: 0;
+}
+
+table.centerTable tr td.timeCell button, table.centerTable tr td.timeCell p {
+    width: 140px;
+    height: 48px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+table.centerTable tr td.timeCell p {
+    padding: 10px;
+}
+
+table.centerTable tr td.nameCell, table.centerTable tr td.nameHead {
+    min-width: 400px;
+}

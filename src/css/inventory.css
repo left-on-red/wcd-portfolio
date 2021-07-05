@@ -1,0 +1,169 @@
+p {
+    margin: 0;
+}
+
+div#radiosContainer td, div#keysContainer td {
+    border-top: 1px solid #000;
+    vertical-align: middle;
+}
+
+table.keyradioNamesTable { width: 100%; }
+
+table.keyradioNamesTable tr td {
+    border: none;
+}
+
+table.keyradioNamesTable tr td input {
+    resize: none;
+    line-height: 30px;
+    width: 90%;
+    border: none;
+    border-bottom: solid 2px #aaa;
+    font-size: 18px;
+}
+
+table.radiosTable {
+    width: 100%;
+}
+
+table.radiosTable tr {
+    height: 60px;
+}
+
+table.radiosTable tr.divider {
+    background-color: #000;
+    height: 10px;
+}
+
+table.radiosTable tr.header td {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+table.radiosTable tr.subheader {
+    text-align: center;
+}
+
+table.radiosTable tr td.toggleCell {
+    width: 100px;
+    overflow: hidden;
+    background-color: #ededed;
+    padding: 0;
+}
+
+table.radiosTable tr td div.toggle {
+    background-color: #ededed;
+    transition: all 0.2s;
+    cursor: pointer;
+    text-align: center;
+}
+
+table.radiosTable tr td div.toggle.selected.in { background-color: #66e89c; }
+table.radiosTable tr td div.toggle.selected.out { background-color: #e8db66; }
+table.radiosTable tr td div.toggle.selected.repair { background-color: #e86666; }
+table.radiosTable tr td div.toggle.selected.miss { background-color: #e89a66; }
+
+table.radiosTable tr td.toggleCell div.toggle {
+    color: #a3a3a3;
+    width: 100px;
+    height: 60px;
+    font-size: 40px;
+}
+
+table.radiosTable tr td div.toggle input {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    outline: none;
+    width: 100px;
+    height: 60px;
+    position: relative;
+    bottom: 7px;
+    font-size: 18px;
+}
+
+table.radiosTable tr td.toggleCell div.toggle.selected { color: #fff; }
+
+table.keysTable tr {
+    height: 60px;
+}
+
+
+table.keysTable tr td:nth-child(3) {
+    width: 100%;
+}
+
+table.keysTable tr td:nth-child(4), table.keysTable tr td:nth-child(5), table.keysTable tr td:nth-child(6), table.keysTable tr td:nth-child(7) {
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+table.keysTable tr td:nth-child(8) {
+    margin: 0;
+    padding: 0;
+}
+
+table.keysTable tr.header td {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+table.keysTable tr td input {
+    height: 20px;
+    width: 150px;
+    line-height: 50px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+table.keysTable tr td.toggleCell {
+    width: 100px;
+    overflow: hidden;
+}
+
+table.keysTable tr td div.toggle {
+    background-color: #ededed;
+    transition: all 0.2s;
+    cursor: pointer;
+    height: 65px;
+    text-align: center;
+}
+
+table.keysTable tr td div.toggle.selected.in { background-color: #66e89c; }
+table.keysTable tr td div.toggle.selected.out { background-color: #e8db66; }
+table.keysTable tr td div.toggle.selected.miss { background-color: #e86666 }
+table.keysTable tr td div.toggle.selected.damg { background-color: #e89a66; }
+
+table.keysTable tr td.toggleCell div.toggle {
+    color: #a3a3a3;
+    width: 60px;
+    height: 65px;
+    font-size: 40px;
+}
+
+table.keysTable tr td div.toggle input {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+}
+
+table.keysTable tr td.toggleCell div.toggle.selected { color: #fff; }
+
+table.keysTable tr td input[type="text"] {
+    padding: 0;
+    margin: 0;
+    height: 65px;
+}

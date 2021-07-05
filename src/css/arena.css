@@ -1,0 +1,58 @@
+div#arenaContainer {
+    margin-left: -40px;
+    padding: 0;
+}
+
+table.arenaTable tr:nth-child(1) td {
+    border: none;
+    margin: 0;
+    padding: 5px;
+}
+
+table.arenaTable tr:nth-child(1) td input {
+    resize: none;
+    line-height: 30px;
+    width: 90%;
+    border: none;
+    border-bottom: solid 2px #aaa;
+    font-size: 18px;
+}
+
+table.arenaTable tr.header {
+    color: #FFF;
+}
+
+table.arenaTable tr.subheader {
+    background-color: #000;
+    color: #FFF;
+}
+
+table.arenaTable tr.highlighted {
+    background-color: #FFFF00;
+}
+
+table.arenaTable tr td.timeHead {
+    width: 140px;
+}
+
+table.arenaTable tr td.timeCell {
+    padding: 0;
+}
+
+table.arenaTable tr td.timeCell button, table.arenaTable tr td.timeCell p {
+    width: 140px;
+    height: 48px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+table.arenaTable tr td.timeCell p {
+    padding: 10px;
+}
+
+table.arenaTable tr td.nameCell, table.arenaTable tr td.nameHead {
+    min-width: 400px;
+}

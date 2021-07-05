@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>WCD :: {{page_title}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/center.css">
+    <link rel="stylesheet" href="/css/arena.css">
+    <link rel="stylesheet" href="/css/inventory.css">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon.png">
+    <link rel="apple-touch-startup-image" href="/favicon.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="/">WCD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item {{center_nav}}" id="centerNav"><a class="nav-link" onclick="navigate(0)">Wisconsin Center</a></li>
+                    <li class="nav-item {{arena_nav}}" id="arenaNav"><a class="nav-link" onclick="navigate(1)">Arena Theater</a></li>
+                    <li class="nav-item {{inventory_nav}}" id="inventoryNav"><a class="nav-link" onclick="navigate(2)">Inventory</a></li>
+                </ul>
+                <button class="btn btn-outline-danger my-2 my-sm-0" onclick="reset()">Reset</button>
+                <button class="btn btn-outline-primary my-2 my-sm-0" onclick="exportPDF()">Export</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="masterCenterContainer" class="masterContainer">
+                <div class="col" id="centerContainer"></div>
+            </div>
+
+            <div id="masterArenaContainer" class="masterContainer">
+                <div class="col" id="arenaContainer"></div>
+            </div>
+
+            <div id="masterInventoryContainer" class="masterContainer">
+                <div class="row">
+                    <div class="col" id="keyradioNamesContainer"></div>
+                </div>
+                <div class="row">
+                    <div class="col" id="radiosContainer"></div>
+                </div>
+                <div class="row">
+                    <div class="col" id="keysContainer"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/center.js"></script>
+    <script type="text/javascript" src="/js/arena.js"></script>
+    <script type="text/javascript" src="/js/inventory.js"></script>
+
+    <!-- runs all of the generators (populates the tables with information) -->
+    <script type="text/javascript">for (let g in generatorScripts) { generatorScripts[g]() }</script>
+</footer>
+</html>
